@@ -16,3 +16,6 @@ test("15 should return fizzbuzz", function() {
   expect(fizzbuzz(15)).toEqual("fizzbuzz");
 });
 
+test("31 should return fizzbuzz", function() {
+  expect(fizzbuzz(31)).toEqual(31);
+});

@@ -8,13 +8,13 @@ For a given natural number greater than zero return:
 */
 
 function fizzbuzz(number) {
-  if (number % 15 === 0) {
+  if (number > 0 && number % 15 === 0) {
     return "fizzbuzz";
-  } else if (number % 5 === 0) {
+  } else if (number > 0 && number % 5 === 0) {
     return "buzz";
-  } else if (number % 3 === 0) {
+  } else if (number > 0 && number % 3 === 0) {
     return "fizz";
-  } else {
+  } else if (number > 0) {
     return number;
   }
 }
