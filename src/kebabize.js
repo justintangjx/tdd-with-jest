@@ -8,17 +8,16 @@ kebabize('camelsHave3Humps') // camels-have-humps
 */
 
 function kebabize(input) {
+  var resultStr = [];
   for (var i = 0; i < input.length; i++) {
-    var newList;
-    if (input.charAt(i) === input.charAt(i).toUpperCase()) {
-      newList =
-        input.slice(0, i) +
-        "-" +
-        input.charAt(i).toLowerCase() +
-        input.slice(i + 1);
+    var currentCharacter = input.charAt(i);
+    if (currentCharacter === currentCharacter.toUpperCase()) {
+      resultStr += "-" + currentCharacter.toLowerCase();
+    } else {
+      resultStr += currentCharacter;
     }
   }
-  return newList;
+  return resultStr;
 }
 
 module.exports = kebabize;
