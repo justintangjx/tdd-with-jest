@@ -15,3 +15,4 @@ test("5 should return buzz", function() {
 test("15 should return fizzbuzz", function() {
   expect(fizzbuzz(15)).toEqual("fizzbuzz");
 });
+
