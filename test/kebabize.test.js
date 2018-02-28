@@ -1,6 +1,6 @@
 const kebabize = require("../src/kebabize");
 
-test.skip("hiThere should be kebabized to hi-there", function() {
+test("hiThere should be kebabized to hi-there", function() {
   expect(kebabize("hiThere")).toEqual("hi-there");
 });
 
